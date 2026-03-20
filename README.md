@@ -8,6 +8,7 @@ at a precise, deterministic frequency (such as 44.1 kHz) and streams
 them to a PC via USB.
 
 ![square-wave-example](./square-wave.png)
+(simple square wave example)
 
 The core of the system is the Direct Memory Access (DMA) controller,
 which acts as an autonomous "data mover." The ADC is configured in a
