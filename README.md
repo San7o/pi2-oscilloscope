@@ -1,14 +1,14 @@
 # pi2-oscilloscope
 
-This project turns the Raspberry Pi Pico 2 into a continuous 12-bit
-oscilloscope by offloading the entire sampling process to the
-hardware. Instead of the CPU manually asking for each value, the
-system is designed as a hardware-only data path that captures signals
-at a precise, deterministic frequency (such as 44.1 kHz) and streams
-them to a PC via USB.
+This project turns the Raspberry Pi Pico 2 into an
+oscilloscope.
 
 ![square-wave-example](./square-wave.png)
 (simple square wave example)
+
+Instead of the CPU manually asking for each value, the system is
+designed as a hardware-only data path that captures signals at a
+precise frequency (such as 44.1 kHz) and streams them to a PC via USB.
 
 The core of the system is the Direct Memory Access (DMA) controller,
 which acts as an autonomous "data mover." The ADC is configured in a
